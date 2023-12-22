@@ -1,0 +1,823 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+#menu,
+.git-2 {
+  display: none;
+}
+header p {
+  font-family: "Prata" sans-serif;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li {
+  margin-right: 25px;
+}
+nav a,
+.git a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  transition: 0.2s;
+}
+.git a {
+  font-family: "Prata" sans-serif;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background-color: yellow;
+  color: black;
+}
+nav li:hover,
+.git:hover {
+  transform: scale(0.93);
+}
+.heading {
+  color: white;
+  width: 1100px;
+  margin: auto;
+  max-width: 1400px;
+}
+.heading h1 {
+  font-family: "Prata", sans-serif;
+  margin-top: 50px;
+  font-size: 3.2rem;
+  font-weight: lighter;
+}
+.heading p,
+figcaption p {
+  line-height: 1.4;
+  color: rgb(204, 204, 204);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.logos {
+  width: 1100px;
+  margin: 50px auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+.works {
+  color: white;
+  width: 1100px;
+  margin: auto;
+  margin-top: 50px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+figure img {
+  width: 93%;
+}
+figcaption h2 {
+  font-family: "Prata", sans-serif;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+main {
+  height: 400px;
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+article,
+aside {
+  margin: auto;
+  max-width: 1400px;
+  width: 1100px;
+}
+article h3 {
+  color: white;
+  font-family: "Prata", sans-serif;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+main p {
+  line-height: 1.4;
+  color: rgb(204, 204, 204);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+main article p {
+  margin-top: 20px;
+}
+main aside p {
+  margin-bottom: 20px;
+}
+.works span {
+  font-weight: 800;
+}
+.penultimate-footer {
+  color: white;
+  height: 220px;
+  background-color: black;
+}
+.AMA {
+  width: 1100px;
+  max-width: 1400px;
+  margin: 50px auto;
+}
+.AMA h4 {
+  font-size: 2.1rem;
+  font-family: "Prata", sans-serif;
+  font-weight: lighter;
+}
+.AMA p {
+  line-height: 1.4;
+  color: rgb(204, 204, 204);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.AMA a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  background-color: yellow;
+  font-size: 1.1rem;
+  font-family: "Prata", sans-serif;
+}
+footer {
+  height: 60px;
+  background-color: rgb(61, 61, 61);
+  display: flex;
+}
+.end {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+footer p {
+  font-family: "Prata" sans-serif;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: white;
+}
+.logo ul {
+  margin-right: 105px;
+}
+.logo li a {
+  margin-right: 15px;
+}
+@media (max-width: 1200px) {
+  body {
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  #menu {
+    display: block;
+  }
+  header {
+    width: 950px;
+    margin: auto;
+  }
+  br {
+    display: none;
+  }
+  .git-2 {
+    display: block;
+  }
+  .git-1 {
+    display: none;
+  }
+  #close-btn {
+    float: right;
+    margin: 2.5rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5em;
+    display: block;
+  }
+  nav ul a {
+    color: black;
+    padding: 0.7rem 2rem;
+    display: block;
+    font-size: 1.3rem;
+  }
+  .git-2 a {
+    font-size: 1rem;
+    padding: 7px 15px;
+  }
+  .git-2 {
+    margin: 0.7rem 1rem;
+  }
+  nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 999;
+    background-color: white;
+    transform: translateX(110%);
+    transition: 0.5s ease-in-out;
+  }
+  .open-nav {
+    transform: translateX(0%);
+  }
+  section h1,
+  p {
+    width: 900px;
+    margin: auto;
+  }
+  .heading h1 {
+    font-size: 4.3rem;
+  }
+  .heading p {
+    font-size: 1.8rem;
+    margin-top: 15px;
+  }
+  section .logos {
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 100px;
+    margin-right: 6px;
+  }
+  .logos img {
+    margin-top: 30px;
+  }
+  .img1 {
+    width: 8rem;
+  }
+  .img2 {
+    width: 5rem;
+  }
+  .img3 {
+    width: 12rem;
+    margin-right: 60px;
+  }
+  .works {
+    display: grid;
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  figure img {
+    width: 100%;
+  }
+  article {
+    margin-top: 70px;
+    width: 900px;
+  }
+  figcaption h2 {
+    font-size: 3rem;
+  }
+  figcaption p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .works article,
+  aside {
+    width: 900px;
+  }
+  .works article h3 {
+    font-size: 3.5rem;
+  }
+  main {
+    height: fit-content;
+    margin-top: 100px;
+  }
+  main .works {
+    margin-top: 10px;
+  }
+  .last-p {
+    margin-bottom: 60px;
+  }
+  main p {
+    font-size: 1.55rem;
+    line-height: 1.4;
+  }
+  main article p {
+    margin-top: 60px;
+  }
+  main aside {
+    margin-top: 160px;
+  }
+  main aside p {
+    margin-top: 60px;
+  }
+  .penultimate-footer {
+    height: fit-content;
+  }
+  .AMA {
+    width: 900px;
+  }
+  .AMA h4 {
+    font-size: 3rem;
+  }
+  .AMA p {
+    font-size: 1.6rem;
+    width: 700px;
+    line-height: 1.4;
+    margin-right: 200px;
+  }
+  .gitss {
+    margin-top: 50px;
+  }
+  .AMA a {
+    font-size: 1.6rem;
+  }
+  .end {
+    width: 900px;
+    margin: auto;
+  }
+  .end p {
+    font-size: 1.3rem;
+  }
+  .logo li {
+    display: flex;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    width: 770px;
+    margin: auto;
+  }
+  .works,
+  article,
+  .works article,
+  aside,
+  .AMA,
+  .end {
+    width: 750px;
+    margin: auto;
+  }
+  section .heading {
+    width: 750px;
+    margin: auto;
+  }
+  .heading h1,
+  p {
+    width: 750px;
+  }
+  .penultimate-footer {
+    height: 300px;
+    margin-top: 70px;
+  }
+  section .logos {
+    width: 750px;
+  }
+  .works {
+    margin-top: 100px;
+  }
+  main .works {
+    margin-top: 10px;
+  }
+  .last-p {
+    margin-bottom: 60px;
+  }
+  .works article {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    width: 700px;
+    margin: auto;
+  }
+  .works,
+  article,
+  .works article,
+  aside,
+  .AMA,
+  .end {
+    width: 650px;
+    margin: auto;
+  }
+  section .heading {
+    width: 650px;
+    margin: auto;
+  }
+  .heading h1,
+  p {
+    width: 650px;
+  }
+  .penultimate-footer {
+    height: 400px;
+    margin-top: 70px;
+  }
+  section .logos {
+    width: 650px;
+  }
+  .works {
+    margin-top: 100px;
+  }
+  main .works {
+    margin-top: 10px;
+  }
+  .last-p {
+    margin-bottom: 60px;
+  }
+  .works article {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    width: 600px;
+    margin: auto;
+  }
+  section h1,
+  p {
+    width: 550px;
+    margin: auto;
+  }
+  .heading h1 {
+    font-size: 3.5rem;
+    width: 550px;
+  }
+  .heading p {
+    font-size: 1.8rem;
+    margin-top: 15px;
+  }
+  section .logos {
+    width: 550px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 100px;
+    margin-right: 6px;
+  }
+  .logos img {
+    margin-top: 30px;
+  }
+  .img1 {
+    width: 8rem;
+  }
+  .img2 {
+    width: 5rem;
+  }
+  .img3 {
+    width: 12rem;
+    margin-right: 60px;
+  }
+  .works {
+    display: grid;
+    width: 550px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  figure img {
+    width: 100%;
+  }
+  article {
+    margin-top: 70px;
+    width: 550px;
+  }
+  figcaption h2 {
+    font-size: 3rem;
+  }
+  figcaption p {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+  .works article,
+  aside {
+    width: 550px;
+  }
+  .works article h3 {
+    font-size: 3.4rem;
+  }
+  main {
+    height: fit-content;
+    margin-top: 100px;
+  }
+  main .works {
+    margin-top: 10px;
+  }
+  .last-p {
+    margin-bottom: 60px;
+  }
+  main p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  main article p {
+    margin-top: 60px;
+  }
+  main aside {
+    margin-top: 160px;
+  }
+  main aside p {
+    margin-top: 60px;
+  }
+  .penultimate-footer {
+    height: 370px;
+  }
+  .AMA {
+    width: 550px;
+  }
+  .AMA h4 {
+    font-size: 3.5rem;
+  }
+  .AMA p {
+    font-size: 1.5rem;
+    width: 550px;
+    line-height: 1.4;
+    margin-right: 200px;
+  }
+  .gitss {
+    margin-top: 50px;
+  }
+  .AMA a {
+    font-size: 1.6rem;
+  }
+  .end {
+    width: 550px;
+    margin: auto;
+  }
+  .end p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    width: 470px;
+    margin: auto;
+  }
+  section .heading {
+    width: 450px;
+    margin: auto;
+  }
+  .heading h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    width: 450px;
+  }
+  .heading p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-top: 15px;
+    width: 450px;
+  }
+  section .logos {
+    width: 450px;
+  }
+  .img1 {
+    width: 6rem;
+  }
+  .img2 {
+    width: 3rem;
+  }
+  .img3 {
+    width: 9rem;
+    margin-right: 60px;
+  }
+  .works {
+    width: 450px;
+  }
+  article {
+    width: 450px;
+  }
+  figcaption h2 {
+    font-size: 2rem;
+  }
+  figcaption p {
+    font-size: 1.4rem;
+    width: 450px;
+    line-height: 1.4;
+  }
+  .works article,
+  aside {
+    width: 450px;
+  }
+  .works article h3 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  main p {
+    font-size: 1.4rem;
+    width: 450px;
+    line-height: 1.4;
+  }
+  .penultimate-footer {
+    height: 310px;
+  }
+  .AMA {
+    width: 450px;
+  }
+  .AMA h4 {
+    font-size: 2.6em;
+    line-height: 1.3;
+  }
+  .AMA p {
+    font-size: 1.3rem;
+    width: 450px;
+    line-height: 1.4;
+    margin-right: 200px;
+  }
+  .AMA a {
+    font-size: 1.2rem;
+  }
+  .end {
+    width: 450px;
+    margin: auto;
+  }
+  .end p,
+  .logo p {
+    font-size: 1rem;
+  }
+  .end img {
+    width: 1rem;
+  }
+  .logo ul {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    width: 370px;
+    margin: auto;
+  }
+  section .heading {
+    width: 350px;
+    margin: auto;
+  }
+  .heading h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    width: 350px;
+  }
+  .heading p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-top: 15px;
+    width: 350px;
+  }
+  section .logos {
+    width: 350px;
+  }
+  .works {
+    width: 350px;
+  }
+  article {
+    width: 350px;
+  }
+  figcaption h2 {
+    font-size: 2rem;
+  }
+  figcaption p {
+    font-size: 1.09rem;
+    width: 350px;
+    line-height: 1.4;
+  }
+  .works article,
+  aside {
+    width: 350px;
+  }
+  .works article h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  main {
+    height: fit-content;
+    margin-top: 100px;
+  }
+  main p {
+    font-size: 1.1rem;
+    width: 350px;
+    line-height: 1.4;
+  }
+  .penultimate-footer {
+    height: 270px;
+  }
+  .AMA {
+    width: 350px;
+  }
+  .AMA h4 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  .AMA p {
+    font-size: 0.97rem;
+    width: 350px;
+    line-height: 1.4;
+    margin-right: 200px;
+  }
+  .end {
+    width: 350px;
+    margin: auto;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    width: 310px;
+    /* margin: auto; */
+  }
+  section .heading {
+    width: 300px;
+    margin: auto;
+  }
+  #menu {
+    display: block !important;
+  }
+  .heading h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    width: 300px;
+  }
+  .heading p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-top: 15px;
+    width: 300px;
+  }
+  section .logos {
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .works {
+    width: 300px;
+  }
+  figure img {
+    width: 100%;
+  }
+  article {
+    margin-top: 70px;
+    width: 300px;
+  }
+  figcaption h2 {
+    font-size: 2rem;
+  }
+  figcaption p {
+    font-size: 0.92rem;
+    width: 300px;
+    line-height: 1.4;
+  }
+  .works article,
+  aside {
+    width: 300px;
+  }
+  .works article h3 {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+  main {
+    height: fit-content;
+    margin-top: 100px;
+  }
+  main p {
+    font-size: 0.92rem;
+    width: 300px;
+    line-height: 1.4;
+  }
+  .penultimate-footer {
+    height: 270px;
+  }
+  .AMA {
+    width: 300px;
+  }
+  .AMA h4 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+  .AMA p {
+    font-size: 0.9rem;
+    width: 300px;
+    line-height: 1.4;
+    margin-right: 200px;
+  }
+  .AMA a {
+    font-size: 1.2rem;
+  }
+  .end {
+    width: 300px;
+    margin: auto;
+  }
+}
